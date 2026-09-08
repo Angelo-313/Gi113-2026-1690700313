@@ -30,6 +30,7 @@ namespace Assignment01
             Console.WriteLine($"MagicPower    :{magicPower}");
             Console.WriteLine($"Health Point  :{healthPoint}");
             Console.WriteLine($"Royal Guard   :{isRoyalGuard}");
+            Console.WriteLine();
 
             double levelAsDouble = characterLevel;
 
