@@ -19,9 +19,17 @@ namespace Assignment02
             var inGot = 0.0;
             var ore = 0.0;
 
-            Console.WriteLine("-----------------------------------");
-            Console.WriteLine("--     Welcome to the Forge      --");
-            Console.WriteLine("-----------------------------------");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("######################################");
+            Console.WriteLine("##----------------------------------##");
+            Console.Write("##---#   ");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.Write("Welcome to the Forge   ");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("#---##\n");
+            Console.WriteLine("##----------------------------------##");
+            Console.WriteLine("######################################");
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine($"{Name} ore Smelting 0.13 / Salvage 0.33 ");
             Console.WriteLine("Key 'S' for Smelt (Ore -> Ingot)");
             Console.WriteLine("Key 'B' for Breakdown (Ingot -> Ore)");
@@ -30,7 +38,8 @@ namespace Assignment02
 
             if (!ischoise || (choice != 'S' && choice != 'B' && choice != 's' && choice != 'b'))
             {
-                Console.WriteLine("Please enter 'S' for Smelt or 'B' for Breakdown.");
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.WriteLine("Please enter 'S/s' for Smelt or 'B/b' for Breakdown.");
             }
             else if (choice == 'S' || choice == 's')
             {
@@ -47,6 +56,7 @@ namespace Assignment02
                 }
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
                     Console.WriteLine("Please select a quantity (1-500).");
                 }
             }
@@ -56,6 +66,7 @@ namespace Assignment02
                 bool isIngotInput = double.TryParse(Console.ReadLine(), out inGot);
                 if (!isIngotInput)
                 {
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
                     Console.WriteLine("Please select a quantity (1-500).");
                 }
                 else if (inGot <= 500 && inGot > 0)
@@ -65,13 +76,16 @@ namespace Assignment02
                 }
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
                     Console.WriteLine("Please select a quantity(1-500).");
                 }
             }
             else
             {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.WriteLine("error : (s , b , B ,S) ");
             }
+            Console.ForegroundColor = ConsoleColor.Gray;
         }
     }
 }
