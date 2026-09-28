@@ -2,8 +2,8 @@
 * Student ID :1690700313
 * Name       :Nattawut Suwannit
 * Section    :129A
-* No.        :N/A
-* Course     : GI113 Computer Programming (GI)
+* No.        :18
+* Course     :GI113 Computer Programming (GI)
 */
 
 
