@@ -134,6 +134,8 @@ namespace Lab07
                 1 => 20,
                 2 => 30,
                 3 => 25,
+                4 => 0,
+                5 => 0,
                 _ => 0
             };
             int damage2 = Math.Max(0, power2 - monsterDefense2);
