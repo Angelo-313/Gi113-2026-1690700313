@@ -145,7 +145,7 @@ namespace Lab07
             {
                 >= 18 => "Critical hit!",
                 >= 10 => "Solid hit.",
-                >= 0 => "Scratch.",
+                >= 0 => "Deals no damage.",
                 _ => "No damage."
             };
             Console.WriteLine($"Rating: {rating2}");
